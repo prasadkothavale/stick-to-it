@@ -1,0 +1,134 @@
+/* Main Window - Sticky Note Style */
+QMainWindow {
+    background-color: #FFF9C4;
+    border: 2px solid #F9A825;
+}
+
+/* Title Bar */
+QLabel#titleLabel {
+    background-color: #F9A825;
+    color: #3E2723;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+/* Section Headers (Now/Later) */
+QLabel#sectionHeader {
+    background-color: #FFE082;
+    color: #3E2723;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+/* Task Items */
+QWidget#taskItem {
+    background-color: #FFFDE7;
+    border: 1px solid #F9A825;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+}
+
+QWidget#taskItem:hover {
+    background-color: #FFF9C4;
+    border: 2px solid #F57F17;
+}
+
+/* Task Labels */
+QLabel#taskText {
+    color: #3E2723;
+    font-size: 11px;
+    padding: 4px;
+}
+
+/* Input Fields */
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 2px solid #F9A825;
+    border-radius: 4px;
+    padding: 6px;
+    color: #3E2723;
+    font-size: 11px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #F57F17;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #FFB300;
+    color: #3E2723;
+    border: 2px solid #F57F17;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 10px;
+    font-weight: bold;
+    min-width: 60px;
+}
+
+QPushButton:hover {
+    background-color: #FFA000;
+}
+
+QPushButton:pressed {
+    background-color: #FF8F00;
+}
+
+/* Small Action Buttons */
+QPushButton#smallBtn {
+    min-width: 20px;
+    max-width: 30px;
+    padding: 3px;
+    font-size: 9px;
+}
+
+/* Scroll Area */
+QScrollArea {
+    background-color: transparent;
+    border: none;
+}
+
+QScrollBar:vertical {
+    background-color: #FFF9C4;
+    width: 12px;
+    border-radius: 6px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #FFB300;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #FFA000;
+}
+
+/* Checkbox */
+QCheckBox {
+    color: #3E2723;
+    font-size: 11px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #F9A825;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #FFB300;
+    border: 2px solid #F57F17;
+}
+
+/* Completed Tasks */
+QLabel#completedTask {
+    color: #757575;
+    text-decoration: line-through;
+}

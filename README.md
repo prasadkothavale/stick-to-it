@@ -8,8 +8,6 @@ A minimalist, sticky-note-style productivity timer that lives on your desktop, t
 * **Privacy First:** All data is stored in a simple `tasks.csv` on your machine.
 * **No Admin Required:** Runs entirely in user-space.
 
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -23,15 +21,28 @@ A minimalist, sticky-note-style productivity timer that lives on your desktop, t
    ```
 2. **Set up a Virtual Environment (Recommended):**
     ```bash
-    python -m venv stick-to-it
+    python -m venv venv
     ```
+3. **Activate Environment**
 - Windows: 
     ```bash
-    source stick-to-it/Scripts/activate
+    source venv/Scripts/activate
     ```
 - Mac/Linux:
     ```bash
-    source stick-to-it/bin/activate
+    source venv/bin/activate
+    ```
+
+4. **Install Requirements**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. **Run the application from source**
+    Navigate to the src folder and run:
+    ```bash
+    cd src
+    python main.py
     ```
 
 ## 🖥️ Platform Setup
